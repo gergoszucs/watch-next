@@ -1,11 +1,10 @@
 var gulp = require('gulp');
-var beautify = require('gulp-beautify');
+var prettier = require('gulp-prettier');
 
-gulp.task('beautify', function () {
+gulp.task('prettier', function () {
   return gulp.src([
-      'src/**/*.html',
       'src/**/*.css',
       'src/**/*.ts',
     ])
-    .pipe(beautify());
+    .pipe(prettier());
 });
